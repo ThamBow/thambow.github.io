@@ -1,0 +1,85 @@
+@charset "utf-8";
+#content {
+	width:800px;
+	z-index:1;
+	padding: 10px;
+	background-color: #F6F6F6;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	height: 600px;
+
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: #000;
+	background-image: url(../images/bkgdHome.jpg);
+	background-attachment: fixed;
+}
+a:link {
+	color: #F60;
+	text-decoration: none;
+}
+a:visited {
+	color: #C00;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+a:active {
+	color: #0F0;
+	text-decoration: none;
+}
+.left
+{
+float:left;
+width:160px;
+margin:0;
+padding:1em;
+}
+div.ormiddle
+{
+	margin-left:200px;
+	border-left:5px solid black;
+	height: 340px;
+}
+.contentormiddleimg {
+	display: inline;
+	right: auto;
+	left: 270px;
+	position: absolute;
+	top: 265px;
+}
+#gadgethree{
+	float:left;
+	position:relative;
+	top:-240px;
+	left:150px;
+	clear:none;
+	/*position:absolute;
+	left:410px;
+	top:245px*/
+	}
+
+div.boxheader 
+{
+	padding:0.5em;
+	color:white;
+	background-color:#000;
+	clear:left;
+	
+}
+div.boxfooter {
+	padding:0.5em;
+	color:white;
+	background-color:#000;
+	clear:none;
+	text-align:right;
+	height:145px;
+	margin: 0px auto auto auto;
+} 

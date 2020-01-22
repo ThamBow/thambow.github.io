@@ -1,0 +1,368 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.title {
+	grid-area: title;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+.title > div {
+	padding-bottom: 1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.toggleMenu {
+display: none;
+color: #960;
+	text-decoration: none;
+	padding: 3px 20px 6px 20px;
+	background-color: #f8ebeb;
+    font-weight: 900;
+	 max-width: 100%;
+	 height: auto;
+	 margin: 0px auto;
+
+}
+
+.topbar {
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	justify-self: start;
+	
+
+}
+.logo {
+	/*background-image: url(../images/mount_logo.jpg);*/
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	box-sizing: border-box;
+}
+.nav {
+	margin-right: 2%;
+	width: 100%;
+	height: 50px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+	position: relative;
+	font-size: 14px;
+	list-style: none;
+
+}
+
+
+
+.nav ul {
+	list-style: none;
+		
+}
+.nav a {
+	color: #960;
+	text-decoration: none;
+	padding: 0px 3px 6px 3px;
+	background-color: #f8ebeb;
+	overflow-wrap: normal;
+	
+}
+
+
+/*.nav a::after {
+  content: "url(../images/downArrow.png)";
+}*/
+.nav li {
+	width: 78px;
+	height: 100%;
+	float: left;
+	position: relative;
+   
+	
+	background-color: #f8ebeb;
+	border-right: 2px solid #FFF;
+	padding-top: 15px;
+	
+	list-style-type: none;
+}
+
+
+.nav li li, .nav li li li{width: 78px; padding-top: 25px; text-align: center; height: 100%; padding-bottom: 5px; }/*HERE ATTEMPTING TO ENSURE HEIGHT SIMILER TO PARENT ELEMENT*/
+
+.nav > li > a {
+	display: block;
+	
+}
+.nav li ul {
+	position: absolute;
+	left: -9999px;
+	z-index: 2;
+}
+.nav li li a {
+	display: block;
+	
+	position: relative;
+	z-index: 1;
+	
+}
+
+
+/*-------------USE THESE TO LET USER KNOW THAT THERE IS A DROPDOWN.  ALSO THE PARENT NOTATION SUPPLIED BY JQUERY------------------*/
+
+.nav > li > .parent {
+	background-image: url("../images/downArrow.png");
+background-repeat: no-repeat;
+background-position:50% 100%;
+
+}
+
+.nav li li .parent {
+background-image: url("../images/downArrow.png");
+background-repeat: no-repeat;
+background-position:50% 100%;
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.nav > li.hover > a, .nav > li li.hover > a { color: rgb(233, 153, 4);}
+
+.nav > li.hover > ul {
+left: 0;
+position: relative;
+/*margin-top: 12px;*/
+
+}
+.nav li li.hover ul {
+left: 105%;
+top: 0;
+}
+
+
+.header {
+	grid-area: header;
+	text-align: center;
+	font-weight: 900;
+	color: #960;
+	text-transform: uppercase;
+}
+.sidebar {
+	grid-area: sidebar;
+}
+.content {
+	display: grid;
+	grid-area: content;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	padding: 10px;/*grid-column-gap: 0.1em;*/
+	
+	
+}
+.content > div {
+	border: 15px solid #FFF;/*padding: 10px;*/
+}
+.content #pic_holder {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 9px;
+	background-color: #d9e6db;/* margin: 0 auto;*/
+}
+.content #pic_holder > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.content > #text_holder {
+	padding: 25px;
+	color: #960;
+	margin: 0px auto;
+	line-height: 30px;
+		
+}
+
+#text_holder > h2{ padding: 5px; text-align: center;}
+
+#text_holder  img{ padding: 5px; object-fit: cover;  max-width: 100%;; height: auto;}
+
+#text_holder ul{ list-style: circle; line-stacking: block-line-height;}
+
+.footer {
+	grid-area: footer;
+	text-align: left;
+	color: #960;
+}
+.footer > p {
+	margin: 5px auto 5px 15px;
+}
+/*------------------------------------------------------------------*/
+.wrapper {
+	display: grid;
+	grid-template-columns: 160px 1fr 1fr 1fr 1fr 1fr 1fr  160px;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+
+	grid-template-areas:
+	 '. title title title title title title .' 
+	  '. header header header header header header .' 
+	  '. content content content content content content .' 
+	  '. footer footer footer footer footer footer .';
+	grid-gap: 1px;
+	background-color: #2196F3;
+	position: relative;
+	background-color: #FFF;
+	/*width: 100%;*/
+	margin: 0 auto;
+}
+.wrapper > div {
+	background-color: #D9E6DB;
+	/*background-color: rgba(255, 255, 255, 0.8);*/
+  /*text-align: center;*/
+	padding: 5px;
+	font-size: 20px;
+}
+.initial {
+	color: orange;
+	float: left;
+	font-size: 3em;
+	padding: .02em;
+	margin-right: .02em;
+	line-height: .8em;
+}
+.hori {
+	float: left;
+	margin: 0px 15px 2px 5px;
+}
+.eve {
+	margin: 0px 15px 2px 5px;
+	float: right;
+}
+
+
+div#fuji {
+	float: left;
+	margin: 0px 15px 2px 20px;
+}
+div#Vin {
+	padding: 2px 2px 20px 2px;
+	text-align: center;
+}
+#factable {
+	/*clip: rect(auto,auto,auto,auto);
+	float: none;*/
+	width: auto;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+}
+#factable td{ padding: 5px;}
+div#contact {
+	text-align: center;
+}
+div#footer {
+	width: 100%;
+	height: 80px;
+	border: 0px solid #000000;
+	text-align: left;
+	background-color: #D9E6DB;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+.footer p{ margin-left: 15px;}
+/*#footepara {
+	margin-left: 20px;
+	margin-top: 20px;
+	color: #03F;
+}*/
+/*---------------------------------------------------------------------*/
+
+	@media screen and (max-width: 1084px) {
+		
+		
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+
+	grid-template-areas:
+	 'title title title title title title' 
+	  'header header header header header header' 
+	  'content content content content content content' 
+	  'footer footer footer footer footer footer';
+	grid-gap: 1px;
+	background-color: #2196F3;
+	position: relative;
+	background-color: #FFF;
+	/*width: 100%;*/
+	margin: 0 auto;
+}
+.title {
+	grid-area: title;
+	display: grid;
+	grid-template-columns: 4fr;
+	grid-template-rows: 2fr;
+	 height: auto;
+	font-family: "Arial Black", Gadget, sans-serif;
+	/*margin: 0px auto;*/
+	position: relative;
+}
+.title > div {
+	padding-bottom: 0.01em;
+	margin-top: 10px;
+}
+.topbar {
+	text-align: center;
+	margin: 0px auto;
+	width: 100%;
+	height: auto;
+	position: relative;
+	float: none;
+}
+.logo {
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	/*float: none;*/
+}
+
+.nav { margin: 0px auto; height: auto; }
+ 
+.toggleMenu {
+/*max-*/width: 100%;
+}
+/*--------------------------------------------------------------BEGIN THE HOVER DROPDOWNS----------------------------------------------------------------*/
+
+.nav  li {
+	margin: 0px auto;
+	width: 100%;
+	float: none;
+	border-right: none;	
+}
+.nav ul {
+	display: block;
+	width: 100%;	
+}
+
+.nav > li.hover > ul , .nav li li.hover ul {
+position: static;
+}
+
+
+
+
+/*nav ul li {
+	width: 100%;
+	text-align: center;
+	background-color: #f8ebeb;
+	border-right: 3px solid #FFF;
+	border-left: 3px solid #FFF;
+	margin-top: 15px;
+	margin: 0px auto;
+}*/
+		
+}

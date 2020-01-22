@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="r_dogs.css" />
+<script type='text/javascript' src='DogsRus.js'></script>
+<title>The Dog Rescue Centre - Adopt a dog</title>
+</head>
+<body>
+<div id='banner'>
+  <h2>Dogs<img src='banner.png' id="image" alt='DogsRuS'/>Us</h2>
+</div>
+<div id="formDiv">
+  <form id='questionsForm' action='#'>
+    <p>Please enter your name:</p>
+    <p>
+      <input type='text' name='userName'/>
+    </p>
+    What size dog would your like?<br>
+    <select name='Size'>
+      <option value='Small'>Small</option>
+      <option value='Medium'>Medium</option>
+      <option value='Large'>Large</option>
+      <option value='Don&apos;t Know'>Don&apos;t Know</option>
+    </select>
+    <br>
+    <br>
+    What coat type would you like your dog to have?<br>
+    <select name='Coat'>
+      <option value='Short'>Short</option>
+      <option value='Long'>Long</option>
+      <option value='Don&apos;t Know'>Don&apos;t Know</option>
+    </select>
+    <br>
+    <br>
+    What energy level would you like your dog to have?<br>
+    <select name='Energy'>
+      <option value='Low'>Low</option>
+      <option value='High'>High</option>
+      <option value='Don&apos;t Know'>Don&apos;t Know</option>
+    </select>
+    <br>
+    <br>
+    Would you like your dog to be good with children?<br>
+    <select name='Children'>
+      <option value='Yes'>Yes</option>
+      <option value='No'>No</option>
+      <option value='Don&apos;t Know'>Don&apos;t Know</option>
+    </select>
+    <br>
+    <br>
+    <input type='button' value='Submit Details' id='btn_submit' onclick='submitdetails()';/>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+div {
+	border: 2px solid white;
+	padding: 10px;
+}
+/* #formDiv {
+ h1 {
+-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   
+  
+} */
+
+
+div > #image {
+	 
+	position: absolute;
+	margin-bottom: -5px;
+	}

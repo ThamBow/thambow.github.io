@@ -1,0 +1,66 @@
+/* CSS Document */
+
+	body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #000099;
+}
+a:link {
+	color: #0066FF;
+	text-decoration:none;
+	display: block;
+
+	/*border-bottom: #0066FF 2px solid;*/
+
+}
+a:visited {
+	color: #0066FF;
+	background-color: #473e3e;
+}
+a:hover {
+	color: #000000;
+}
+h1 {
+	color: #0066FF;
+	text-align: center;
+}
+strong {
+	color: #CC0033;
+}
+.large {
+	font-size: 115%;
+}
+.footer {
+	font-size: 80%;
+	font-weight: bold;
+	text-align: right;
+}
+#navigation {
+	float: left;
+	width: 240px;
+	background-color: whitesmoke;
+	padding-left: 6px;
+
+}
+div#content {
+	margin-left: 250px;
+	padding-left: 10px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #999999;
+	height: 700px;
+}
+div#container {
+	border: thin solid #999999;
+	background-color: whitesmoke;
+	margin: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+
+
+}
+#PHPOutput {
+	color: #FFFFFF;
+	background-color: #333333;
+
+}

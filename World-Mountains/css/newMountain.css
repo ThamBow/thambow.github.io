@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*header, footer, section, nav, {  
+    display: block;  
+}*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 100%;
+	background-color: #CCC;
+}
+#pageWrap {
+	margin: 0 auto;
+	width: 940px;
+	min-height: 100%;
+	position: relative;
+	background-color: #FFF;
+}
+h1 {
+	color: #03F;
+	font-size: 20px;
+	padding: 9px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	position: absolute;
+	top: 5px;
+	left: 425px;
+}
+h2 {
+	text-align: center;
+	color: blue;
+	padding: 15px;
+}
+header#top-curtain {
+	width: 940px;
+	height: 100px;
+	margin: 0px auto;
+	border: 0px solid #000000;
+	text-align: center;
+	background-color: #D9E6DB;
+}
+div#logo {
+	width: 150px;
+	height: 100px;
+	background-image: url(../images/mount_logo.jpg);
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	margin-left: 25px;
+}
+nav {
+	float: left;
+	margin-top: 20px;
+	height: 250px;
+	font-family: Geneva, Arial;
+	background-color: /*#D0DBF0*/;
+}
+div#body_wrap {
+	float: right;
+	width: 750px;
+	height: auto;
+	margin-top: 20px;
+	margin-right: 10px;
+	padding-bottom: 80px;
+}
+div#outer_grey {
+	width: auto;
+	height: auto;
+	background-color: #adaaaa;
+	margin-bottom: 50px;
+}
+header#outer_grey_head {
+	width: auto;
+	height: 60px;
+	background-color: #dcdcdc;
+}
+div#picHolder {
+	background-color: #d9e6db;
+	text-align: center;
+	padding: 5px;
+	height: 240px;
+	padding: 15px 5px 10px 5px;
+}/*The contents of this to be treated as text*/
+nav ul {/*Removes bullet points and strips list of positioning*/
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+nav ul ul {/*Target the ul's inside the list containing the hyperlinks*/
+	position: absolute;
+	display: inline-block;
+	/*left: 172px;*/
+	left: 9999px;
+	z-index: 5;
+	/*top: -37px;*/
+	/*top: 100%;*/
+	/*vertical-align: top;*/
+	
+}
+nav li {
+	display: inline;
+	position: relative;
+}
+nav li a {
+	display: block;
+	padding: 10px 0px 10px 5px;
+	width: 165px;
+	color: #0000ff;
+	background-color: #d0dbf0;
+	text-decoration: none;
+}/*Targeted 'a' properties set*/
+nav li a:hover {
+	background-color: #00dbf0;
+	color: #FFF;
+}/*'a' on hover properties set*/
+nav li:hover ul {/**On hover over first li item, the next ul(the dropdown block) is shown by bringing it in from 999px to 0*/
+	left: 170px;
+	top: -37px;/*IMPORTANT FOR ALIGNING SUBMENUS TO THE RIGHT, CONSIDER USING JAVASCRIPT FOR ALIGNING*/
+}
+nav li:hover ul ul {/**The second nested ul's on hover not shown*/
+	left: 9999px;
+	z-index: 5;
+}
+nav li li:hover ul {/*On hovering the individual nested links*/
+	left: 170px;
+	
+}
+div#text_hold_one {
+	width: 750px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #f8ebeb;
+}/*Text and other content in here*/
+div#text_hold_two {
+	width: 700px;
+	height: auto;
+	margin: 0 auto;
+	padding: 20px 20px 50px 20px;
+	margin-bottom: 10px;
+	background-color: #f8ebeb;
+}/*Text and other content in here*/
+div#second_outer_grey {
+	width: 750px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #f8ebeb;
+}
+header#second_outer_grey_head {
+	width: auto;
+	height: 60px;
+	background-color: #dcdcdc;
+}
+.initial {
+	color: orange;
+	float: left;
+	font-size: 3em;
+	padding: .02em;
+	margin-right: .02em;
+	line-height: .8em;
+}
+.hori {
+	float: left;
+	margin: 0px 15px 2px 5px;
+}
+.eve {
+	margin: 0px 15px 2px 5px;
+	float: right;
+}
+div#fuji {
+	float: left;
+	margin: 0px 15px 2px 20px;
+}
+div#Vin {
+	padding: 2px 2px 20px 2px;
+	text-align: center;
+}
+#factable {
+	clip: rect(auto,auto,auto,auto);
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+div#contact {
+	text-align: center;
+}
+.clearBoth {
+	clear: both;
+}
+div#footer {
+	width: 100%;
+	height: 80px;
+	border: 0px solid #000000;
+	text-align: left;
+	background-color: #D9E6DB;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#footepara {
+	margin-left: 10px;
+	margin-top: 20px;
+	color: #00F;
+}
+div#tam {
+	margin-right: auto;
+	margin-left: auto;
+}
+#vert_list, #hori_list, #php_stuff, #java_stuff {
+	text-decoration: none;
+	padding: 30px;
+}
+a:hover {
+	text-decoration: none;
+	background-color: #990;
+}
+a:link {
+	text-decoration: none;
+}
+#top-curtain h1 {
+	margin: -5px auto auto auto;
+}
